@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/task1/app/src/main/res/drawable/button.xml" value="0.153" />
         <entry key="..\:/task1/app/src/main/res/drawable/ic_products.xml" value="0.153" />
+        <entry key="..\:/task1/app/src/main/res/drawable/ic_shield.xml" value="0.175" />
         <entry key="..\:/task1/app/src/main/res/layout/activity_login_activity.xml" value="0.25" />
         <entry key="..\:/task1/app/src/main/res/layout/activity_login_in.xml" value="0.2" />
         <entry key="..\:/task1/app/src/main/res/layout/activity_main.xml" value="0.25" />
@@ -19,6 +20,7 @@
         <entry key="..\:/task1/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
         <entry key="..\:/task1/app/src/main/res/layout/fragment_second.xml" value="0.25" />
         <entry key="..\:/task1/app/src/main/res/layout/fragment_sign_up.xml" value="0.18177083333333333" />
+        <entry key="..\:/task1/app/src/main/res/layout/fragment_splash_screen.xml" value="0.18385416666666668" />
         <entry key="..\:/task1/app/src/main/res/menu/bot_nav_menu.xml" value="0.25" />
       </map>
     </option>

@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreen">
+    tools:context=".SplashScreenActivity">
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvWelcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="150dp"
-        android:text="@string/welcome"
-        android:textSize="40sp"
-        android:textColor="@color/teal_700"
-        android:textStyle="bold"/>
+    android:id="@+id/tvWelcome"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="150dp"
+    android:text="@string/welcome"
+    android:textSize="40sp"
+    android:textColor="@color/teal_700"
+    android:textStyle="bold"/>
     <ProgressBar
         android:id="@+id/pBar"
         android:layout_width="40dp"
@@ -26,5 +26,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="100dp"
         />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

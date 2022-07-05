@@ -10,12 +10,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:text="@string/Profile"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/user_profile"
         android:textSize="30sp"
-        app:layout_constraintHorizontal_bias="0.5"
         />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/usName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileFrag"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:text="Username"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/PhNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usName"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:text="Username"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/usEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhNum"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:text="Username"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,30 +2,28 @@
     <string name="app_name">task1</string>
     <string name="welcome">Welcome</string>
     <string name="get_started">Get Started</string>
-    <string name="name">Name</string>
-    <string name="full_name">Full Name</string>
-    <string name="username">UserName</string>
+    <string name="tvsignup">tvSignUp</string>
     <string name="email">Email</string>
-    <string name="password">Password</string>
-    <string name="confirm_password">Confirm Password</string>
-    <string name="or_sign_up_with">---- Or sign up with ----</string>
-    <string name="already_have_an_account">Already have an account?</string>
-    <string name="sign_in">Sign In</string>
-    <string name="account_login">Account Login</string>
-    <string name="email_or_phone">Email or Phone</string>
-    <string name="log_in">Log In</string>
-    <string name="don_t_have_account">Don\'t have account?</string>
-    <string name="register">Register</string>
-    <string name="sign_up">Sign Up</string>
     <string name="phone_number">Phone number</string>
-    <string name="home">Home</string>
+    <string name="fullname">Fullname</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="dd_mm_yyyy">dd/mm/yyyy</string>
+    <string name="register">Register</string>
+    <string name="signup">SignUp</string>
+    <string name="user_profile">User Profile</string>
     <string name="products">Products</string>
+    <string name="account_login">Account Login</string>
+    <string name="log_username">username</string>
+    <string name="log_password">password</string>
+    <string name="log_log_in">Log In</string>
+    <string name="or_sign_up_with">---- or sign up with ----</string>
+    <string name="don_t_have_account">don\'t have account?</string>
+    <string name="log_sign_up">Sign Up</string>
     <string name="favorites">Favorites</string>
+    <string name="home">Home</string>
     <string name="profile">Profile</string>
-    <string name="product">Products</string>
-    <string name="Profile">Profile</string>
-    <string name="favorite">Favorites</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="password_login">Password</string>
+    <string name="email_or_phonenumber">Email or Phonenumber</string>
+
+
 </resources>
