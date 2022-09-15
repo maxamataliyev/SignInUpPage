@@ -4,6 +4,10 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.maxataliyev_01.task1.databinding.ActivityMainBinding
+import com.maxataliyev_01.task1.nav_bottom_menu.FavoriteFragment
+import com.maxataliyev_01.task1.nav_bottom_menu.HomeFragment
+import com.maxataliyev_01.task1.nav_bottom_menu.ProductsFragment
+import com.maxataliyev_01.task1.nav_bottom_menu.ProfileFragment
 
 
 class MainActivity : AppCompatActivity() {
@@ -12,10 +16,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val homeFragment=HomeFragment()
-        val productFragment=ProductsFragment()
-        val favoriteFragment=FavoriteFragment()
-        val profileFragment=ProfileFragment()
+        val homeFragment= HomeFragment()
+        val productFragment= ProductsFragment()
+        val favoriteFragment= FavoriteFragment()
+        val profileFragment= ProfileFragment()
         setCurrentFragment(homeFragment)
         binding.bottomNavigationMenu.setOnNavigationItemSelectedListener {
             when(it.itemId){

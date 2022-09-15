@@ -24,6 +24,8 @@
     <string name="home">Home</string>
     <string name="profile">Profile</string>
     <string name="email_or_phonenumber">Email or Phonenumber</string>
+    <string name="user_information">User Information</string>
+    <string name="date_of_birth">Date of birth</string>
 
 
 </resources>

@@ -1,5 +1,6 @@
-package com.maxataliyev_01.task1
+package com.maxataliyev_01.task1.login
 
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.LayoutInflater
@@ -10,12 +11,16 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.maxataliyev_01.task1.R
+import com.maxataliyev_01.task1.databinding.FragmentSignUpBinding
 
-class SignUp : Fragment() {
+class SignUp : Fragment(R.layout.fragment_sign_up) {
+    lateinit var binding: FragmentSignUpBinding
     private lateinit var fulname:EditText
     private lateinit var phonenumber:EditText
     private lateinit var email:EditText
@@ -23,7 +28,34 @@ class SignUp : Fragment() {
     private lateinit var conpasswrod:EditText
     private lateinit var dateBirth:EditText
     private lateinit var fAuth:FirebaseAuth
-    override fun onCreateView(
+    lateinit var sharedPreferences: SharedPreferences
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding= FragmentSignUpBinding.bind(view)
+        fulname=binding.etFullname
+        phonenumber=binding.etPhoneNumber
+        email=binding.etEmail
+        password=binding.etPassword
+        conpasswrod=binding.etConfirmPassword
+        dateBirth=binding.etDateBirth
+        fAuth=Firebase.auth
+
+
+        binding.btnRegister.setOnClickListener {
+            validateEmptyForm()
+        }
+    }
+
+
+
+
+
+
+
+    //onCreatedView
+    /*override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
@@ -36,8 +68,8 @@ class SignUp : Fragment() {
         dateBirth=view.findViewById(R.id.etDateBirth)
         fAuth=Firebase.auth
 
-        view.findViewById<Button>(R.id.btnRegister).setOnClickListener {
 
+        view.findViewById<Button>(R.id.btnRegister).setOnClickListener {
             validateEmptyForm()
 
         }
@@ -45,12 +77,16 @@ class SignUp : Fragment() {
 
        }
 
+     */
+
+
 
      private fun firebaseSignUp(){
                fAuth.createUserWithEmailAndPassword(email.text.toString(),password.text.toString()).addOnCompleteListener {
              task->
              if (task.isSuccessful){
                  findNavController().navigate(R.id.action_signUp_to_logIn)
+
              }
              else{
                  Toast.makeText(context, task.exception?.message, Toast.LENGTH_SHORT).show()
@@ -58,9 +94,12 @@ class SignUp : Fragment() {
          }
 
      }
+
+
      private fun validateEmptyForm() {
          val icon=AppCompatResources.getDrawable(requireContext(),
-         R.drawable.ic_shield)
+             R.drawable.ic_shield
+         )
          icon?.setBounds(0,0,icon.intrinsicWidth,icon.intrinsicHeight)
          when{
              TextUtils.isEmpty(fulname.text.toString().trim())->{
@@ -96,10 +135,7 @@ class SignUp : Fragment() {
                                  if (conpasswrod.text.toString()==password.text.toString()){
                                      if (dateBirth.text.toString().matches(Regex("^(0[1-9]|1[012])[-/.](0[1-9]|[12][0-9]|3[01])[-/.](19|20)\\d\\d$" ))){
 
-                                         
-
                                      firebaseSignUp()
-
 
                                      }else{
                                          dateBirth.setError("Birthday didn't match",icon)
@@ -123,22 +159,6 @@ class SignUp : Fragment() {
                      fulname.setError("Please validate Name",icon)
                  }
                      }
-
-
          }
      }
     }
-
-
-
-
-
-
-
-
-
-
-//            activity?.let{
-//                it.startActivity(Intent (it, LogIn::class.java))
-//            }
-//        }

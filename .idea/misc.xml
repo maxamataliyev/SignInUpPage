@@ -7,7 +7,7 @@
         <entry key="..\:/task1/app/src/main/res/drawable/ic_products.xml" value="0.153" />
         <entry key="..\:/task1/app/src/main/res/drawable/ic_shield.xml" value="0.175" />
         <entry key="..\:/task1/app/src/main/res/layout/activity_login_activity.xml" value="0.25" />
-        <entry key="..\:/task1/app/src/main/res/layout/activity_login_in.xml" value="0.2" />
+        <entry key="..\:/task1/app/src/main/res/layout/activity_login_in.xml" value="0.1234375" />
         <entry key="..\:/task1/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/task1/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/task1/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
@@ -15,9 +15,9 @@
         <entry key="..\:/task1/app/src/main/res/layout/fragment_favorites.xml" value="0.25" />
         <entry key="..\:/task1/app/src/main/res/layout/fragment_first.xml" value="0.25" />
         <entry key="..\:/task1/app/src/main/res/layout/fragment_home.xml" value="0.25" />
-        <entry key="..\:/task1/app/src/main/res/layout/fragment_log_in.xml" value="0.18177083333333333" />
+        <entry key="..\:/task1/app/src/main/res/layout/fragment_log_in.xml" value="0.111328125" />
         <entry key="..\:/task1/app/src/main/res/layout/fragment_products.xml" value="0.25" />
-        <entry key="..\:/task1/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="..\:/task1/app/src/main/res/layout/fragment_profile.xml" value="0.152" />
         <entry key="..\:/task1/app/src/main/res/layout/fragment_second.xml" value="0.25" />
         <entry key="..\:/task1/app/src/main/res/layout/fragment_sign_up.xml" value="0.18177083333333333" />
         <entry key="..\:/task1/app/src/main/res/layout/fragment_splash_screen.xml" value="0.18385416666666668" />

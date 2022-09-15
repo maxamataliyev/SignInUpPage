@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".LogIn">
+    tools:context=".login.LogIn">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/AccountLogin"
@@ -64,6 +64,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logInLinear"
+        app:layout_constraintBottom_toTopOf="@id/extraText"
         android:layout_marginTop="80dp"
         android:background="@drawable/button"
         android:text="@string/log_log_in"
@@ -77,8 +78,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogIn"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/frameNetwork"
         android:gravity="center"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="20dp"
         android:text="@string/or_sign_up_with"/>
 
 
@@ -89,7 +91,7 @@
         app:layout_constraintTop_toBottomOf="@id/extraText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp">
+        app:layout_constraintBottom_toTopOf="@id/tvNotHaveAccount">
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/btnGoogle"
             android:layout_width="30dp"
@@ -131,7 +133,7 @@
 
 
 
-    <androidx.appcompat.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/btnSignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".LoginInActivity">
+    tools:context=".login.LoginInActivity">
 
 
+    
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
         app:layout_constraintTop_toTopOf="parent"

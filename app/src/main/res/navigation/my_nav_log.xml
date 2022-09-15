@@ -6,7 +6,7 @@
     app:startDestination="@id/logIn">
     <fragment
         android:id="@+id/logIn"
-        android:name="com.maxataliyev_01.task1.LogIn"
+        android:name="com.maxataliyev_01.task1.login.LogIn"
         android:label="fragment_log_in"
         tools:layout="@layout/fragment_log_in" >
         <action
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/signUp"
-        android:name="com.maxataliyev_01.task1.SignUp"
+        android:name="com.maxataliyev_01.task1.login.SignUp"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
